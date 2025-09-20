@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Grid Academy - أكاديمية شبكة المعرفة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="language-toggle">
+          <button id="englishBtn" class="lang-btn active" data-lang="en">
+            English
+          </button>
+          <button id="arabicBtn" class="lang-btn" data-lang="ar">
+            العربية
+          </button>
+        </div>
+
+        <div class="academy-logo">
+          <img
+            src="logo.png"
+            alt="Knowledge Grid Academy Logo"
+            class="logo-image"
+          />
+          <div class="academy-info">
+            <h1
+              class="academy-title"
+              data-en="Knowledge Grid Academy"
+              data-ar="أكاديمية شبكة المعرفة"
+            >
+              Knowledge Grid Academy
+            </h1>
+            <p
+              class="academy-subtitle"
+              data-en="Excellence in Education"
+              data-ar="التميز في التعليم"
+            >
+              Excellence in Education
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="welcome-section">
+          <div class="form-container">
+            <h2
+              class="form-title"
+              data-en="Student Portal"
+              data-ar="بوابة الطلاب"
+            >
+              Student Portal
+            </h2>
+            <p
+              class="form-description"
+              data-en="Enter your name to receive your personalized welcome"
+              data-ar="أدخل اسمك لتلقي ترحيب شخصي"
+            >
+              Enter your name to receive your personalized welcome
+            </p>
+
+            <form id="welcomeForm" class="welcome-form">
+              <div class="form-group">
+                <label
+                  for="studentName"
+                  class="form-label"
+                  data-en="Enter your name"
+                  data-ar="أدخل اسمك"
+                  >Enter your name</label
+                >
+                <input
+                  type="text"
+                  id="studentName"
+                  name="studentName"
+                  class="form-control name-input"
+                  data-placeholder-en="Your full name"
+                  data-placeholder-ar="اسمك الكامل"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn--primary btn--lg welcome-btn"
+              >
+                <span class="btn-text" data-en="Welcome Me" data-ar="أهلاً بي"
+                  >Welcome Me</span
+                >
+                <span class="btn-icon">→</span>
+              </button>
+            </form>
+
+            <div id="welcomeMessage" class="welcome-message hidden">
+              <div class="message-icon">✨</div>
+              <p id="welcomeText" class="message-text"></p>
+              <div class="message-decoration">
+                <span class="decoration-element">📚</span>
+                <span class="decoration-element">🌟</span>
+                <span class="decoration-element">📖</span>
+              </div>
+              <button
+                id="nextStudentBtn"
+                class="btn btn--secondary btn--sm next-btn"
+                data-en="Next Student"
+                data-ar="الطالب التالي"
+              >
+                Next Student
+              </button>
+            </div>
+          </div>
+
+          <div class="academy-features">
+            <div class="feature">
+              <div class="feature-icon">📚</div>
+              <span data-en="Quality Education" data-ar="تعليم عالي الجودة"
+                >Quality Education</span
+              >
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🎯</div>
+              <span data-en="Academic Excellence" data-ar="التميز الأكاديمي"
+                >Academic Excellence</span
+              >
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🌟</div>
+              <span data-en="Bright Future" data-ar="مستقبل مشرق"
+                >Bright Future</span
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p
+          data-en="© 2025 Knowledge Grid Academy. Nurturing minds, shaping futures."
+          data-ar="© 2025 أكاديمية شبكة المعرفة. نرعى العقول، نشكل المستقبل."
+        >
+          © 2025 Knowledge Grid Academy. Nurturing minds, shaping futures.
+        </p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
